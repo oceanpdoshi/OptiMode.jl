@@ -84,7 +84,7 @@ pᵪ₂ = (
 	λs  =  [1.313, 1.313, 1.313/2.0]
 )
 
-function make_MgO_LiNbO₃(;pₒ=pₒ,pₑ=pₑ,pᵪ₂=pᵪ₂)
+function make_MgO_LiNbO₃_Umemura(;pₒ=pₒ,pₑ=pₑ,pᵪ₂=pᵪ₂)
 	@variables λ, ω, T, λs[1:3]
 	# nₒ² = n²_MgO_LiNbO₃_sym(λ, T; pₒ...)
 	# nₑ² = n²_MgO_LiNbO₃_sym(λ, T; pₑ...)
@@ -145,5 +145,5 @@ end
 
 ################################################################
 
-MgO_LiNbO₃_Umemura = make_MgO_LiNbO₃()
+MgO_LiNbO₃_Umemura = make_MgO_LiNbO₃_Umemura()
 
